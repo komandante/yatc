@@ -48,7 +48,7 @@ public class AydaParser {
         int pagesCount = postsCount / 20 + 1;
         log.debug("Page count: {}", pagesCount);
 
-        for (int i = 0; i < 1/*pagesCount*/; i++) {
+        for (int i = 0; i < pagesCount; i++) {
             Document doc = getDocument(PAGE_URI + i);
             posts = doc.select("div.ayda_list_item")
                     .stream()
