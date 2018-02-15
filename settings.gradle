@@ -1,0 +1,4 @@
+rootProject.name = 'yatc-platform'
+include 'telegram-bot'
+include 'ski-ru'
+
